@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark d-flex flex-column min-vh-100">
+    <main class="flex-fill">
+      <nav
+        class="navbar navbar-expand-lg bg-dark border-bottom border-secondary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">KKBlog</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+            <div class="userContainer mx-2">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</button>
+                <div
+                  class="modal fade"
+                  id="loginModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                          Log In
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="text-light">
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+                <div
+                  class="modal fade"
+                  id="signUpModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                          Sign Up
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="text-light">
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container marketing">    
+        <div class="row featurette  my-4">
+          <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="featurette-heading fw-normal lh-1 text-light">About KKBlog<span class="text-warning"> Your Ultimate Coding Resource</span></h2>
+            <p class="lead text-light">Welcome to KKBlog! We are dedicated to providing coders with the latest updates on trending technologies, comprehensive course details, and valuable project source codes. Our goal is to empower developers of all levels to stay ahead in the rapidly evolving tech landscape.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/kkpic1.png" alt="">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="featurette-heading fw-normal lh-1 text-light">Why KKBlog? <span class="text-warning">Empowering Your Coding Journey</span></h2>
+            <p class="lead text-light">At KKBlog, we understand the importance of staying updated in the ever-evolving world of technology. Our platform offers a curated selection of resources, including tutorials, articles, and practical project examples, to help you master new skills and stay at the forefront of coding trends.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/kkpik2.png" alt="">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+    </main>
+
+    <footer
+      class="bg-light d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 ms-2 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+        >
+          <img class="bi rounded-circle border border-primary" width="30" height="30" src="/KKlogo.png" alt="" />
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© 2024 KKBlog, Inc</span
+        >
+      </div>
+
+      <ul class="nav me-3 col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"
+            >
+            <img class="bi" width="30" height="30" src="/icon-instagram.png" alt="">
+            </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#">
+            <img class="bi" width="30" height="30" src="/icon-twitter.png" alt="">
+            </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="#"
+            ><img class="bi" width="30" height="30" src="/icon-linkedin.png" alt="">
+        </a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
